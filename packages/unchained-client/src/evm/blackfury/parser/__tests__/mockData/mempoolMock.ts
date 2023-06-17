@@ -1,4 +1,4 @@
-import { Tx } from '../../../../../generated/blackfury'
+import { Tx } from '../../../../../generated/ethereum'
 
 export const mempoolMock = (tx: Tx, tokenTransfers = false) => {
   const mempoolSpecific = {

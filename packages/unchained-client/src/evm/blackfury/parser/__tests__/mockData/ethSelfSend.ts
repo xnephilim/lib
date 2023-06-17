@@ -1,20 +1,21 @@
-import { Tx } from '../../../../../generated/blackfury'
+import { Tx } from '../../../../../generated/ethereum'
 import { mempoolMock } from './mempoolMock'
 
 const ethSelfSend: Tx = {
-  txid: '0xabdde729b7c9a0a502e9accd08b3989f64b1226cb2dd9702577f9f5785153e5c',
-  blockHash: '0x3366c1dcd1872743621c4d72728876c36e6d60ebc2743936453fe930b420045e',
-  blockHeight: 61385244,
-  timestamp: 1673040374,
+  txid: '0x854dff9231cadb562129cff006150dfc6dd1508ea2a39c9b51292d234c47a992',
+  blockHash: '0xeafabfeaa242a02c116e4a67a45ef5b34b24b6743922b7d4efdad1a3e8454b24',
+  blockHeight: 12697941,
+  timestamp: 1624552745,
   status: 1,
-  from: '0x92BD687953Da50855AeE2Df0Cff282cC2d5F226b',
-  to: '0x92BD687953Da50855AeE2Df0Cff282cC2d5F226b',
-  confirmations: 1930,
-  value: '15000000000000000',
-  fee: '2100000000000',
-  gasLimit: '350000',
+  from: '0x6bF198c2B5c8E48Af4e876bc2173175b89b1DA0C',
+  to: '0x6bF198c2B5c8E48Af4e876bc2173175b89b1DA0C',
+  confirmations: 2115286,
+  value: '503100000000000',
+  fee: '399000000000000',
+  gasLimit: '23100',
   gasUsed: '21000',
-  gasPrice: '100000000',
+  gasPrice: '19000000000',
+  inputData: '0x',
 }
 
 export default {

@@ -1,37 +1,36 @@
-import { Tx } from '../../../../../generated/avalanche'
 import { mempoolMock } from './mempoolMock'
 
-export const tokenStandard: Tx = {
-  txid: '0xf8f377cc404b2662ba7538e20948725230edc96646d66172a9837c367bbec1e8',
-  blockHash: '0x32529396971608df5c0d3644d53a3064368bbcfe40e57291e7a3aeb0163b3edc',
-  blockHeight: 61387586,
-  timestamp: 1673040990,
+const tokenSelfSend = {
+  txid: '0xa9e0f831d57140cde9f40d8a1fac2342642f982190428618dc6b0c1c334069da',
+  blockHash: '0xb8e998d8bd8f51dae6ce417958b3d5d2d1dd936477d6aed9836b68d137a1ccb5',
+  blockHeight: 12697967,
+  timestamp: 1624553243,
   status: 1,
-  from: '0xBcDdd1333982B26956Bf83D6fb704bC28Dfe4aBA',
-  to: '0x4200000000000000000000000000000000000042',
-  confirmations: 477,
+  from: '0x6bF198c2B5c8E48Af4e876bc2173175b89b1DA0C',
+  to: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  confirmations: 2115299,
   value: '0',
-  fee: '57124000000',
-  gasLimit: '9000000',
-  gasUsed: '57124',
-  gasPrice: '1000000',
+  fee: '1011738000000000',
+  gasLimit: '46382',
+  gasUsed: '38913',
+  gasPrice: '26000000000',
   inputData:
-    '0xa9059cbb000000000000000000000000a1f55ac63e174fabaf93e6b2854da6d85c9fdc50000000000000000000000000000000000000000000000001144925a0b9314fc6',
+    '0xa9059cbb0000000000000000000000006bf198c2b5c8e48af4e876bc2173175b89b1da0c000000000000000000000000000000000000000000000000000000000016eb80',
   tokenTransfers: [
     {
-      contract: '0x4200000000000000000000000000000000000042',
-      decimals: 18,
-      name: 'Blackfury',
-      symbol: 'OP',
+      contract: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      decimals: 6,
+      name: 'USD Coin',
+      symbol: 'USDC',
       type: 'ERC20',
-      from: '0xBcDdd1333982B26956Bf83D6fb704bC28Dfe4aBA',
-      to: '0xBcDdd1333982B26956Bf83D6fb704bC28Dfe4aBA',
-      value: '19908484999999999942',
+      from: '0x6bF198c2B5c8E48Af4e876bc2173175b89b1DA0C',
+      to: '0x6bF198c2B5c8E48Af4e876bc2173175b89b1DA0C',
+      value: '1502080',
     },
   ],
 }
 
 export default {
-  tx: tokenStandard,
-  txMempool: mempoolMock(tokenStandard),
+  tx: tokenSelfSend,
+  txMempool: mempoolMock(tokenSelfSend, true),
 }
