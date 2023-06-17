@@ -135,6 +135,22 @@ export const optimism: Asset = {
   explorerTxLink: 'https://optimistic.etherscan.io/tx/',
 }
 
+export const blackfury: Asset = {
+  assetId: caip.blackfuryAssetId,
+  chainId: caip.blackfuryChainId,
+  name: 'FURY',
+  networkName: 'Blackfury',
+  symbol: 'FURY',
+  precision: 18,
+  color: '#5C6BC0',
+  networkColor: '#FC0424',
+  icon: 'https://assets.coincap.io/assets/icons/256/fury.png',
+  networkIcon: 'https://assets.coingecko.com/coins/images/25244/thumb/Blackfury.png?1660904599',
+  explorer: 'https://blackfury.etherscan.io',
+  explorerAddressLink: 'https://blackfury.etherscan.io/address/',
+  explorerTxLink: 'https://blackfury.etherscan.io/tx/',
+}
+
 export const bnbsmartchain: Asset = {
   assetId: caip.bscAssetId,
   chainId: caip.bscChainId,
