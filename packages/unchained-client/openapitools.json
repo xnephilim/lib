@@ -122,10 +122,10 @@
           "useSingleRequestParameter": true
         }
       },
-      "optimism": {
+      "blackfury": {
         "inputSpec": "https://raw.githubusercontent.com/xnephilim/unchained/develop/node/coinstacks/blackfury/api/src/swagger.json",
         "generatorName": "typescript-fetch",
-        "output": "#{cwd}/src/generated/optimism",
+        "output": "#{cwd}/src/generated/blackfury",
         "enablePostProcessFile": true,
         "reservedWordsMappings": {
           "in": "in"

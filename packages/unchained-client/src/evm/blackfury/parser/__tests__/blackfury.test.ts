@@ -6,7 +6,7 @@ import { TransactionParser, ZRX_BLACKFURY_PROXY_CONTRACT } from '../index'
 import erc20Approve from './mockData/erc20Approve'
 import ethSelfSend from './mockData/ethSelfSend'
 import ethStandard from './mockData/ethStandard'
-import { opToken, usdcToken } from './mockData/tokens'
+import { furyToken, usdcToken } from './mockData/tokens'
 import tokenSelfSend from './mockData/tokenSelfSend'
 import tokenStandard from './mockData/tokenStandard'
 import zrxTradeEthToUsdc from './mockData/zrxTradeEthToUsdc'
@@ -184,7 +184,7 @@ describe('parseTx', () => {
             assetId: 'eip155:10/erc20:0x4200000000000000000000000000000000000042',
             totalValue: '19908484999999999942',
             components: [{ value: '19908484999999999942' }],
-            token: opToken,
+            token: furyToken,
           },
         ],
       }
@@ -235,7 +235,7 @@ describe('parseTx', () => {
             assetId: 'eip155:10/erc20:0x4200000000000000000000000000000000000042',
             totalValue: '19908484999999999942',
             components: [{ value: '19908484999999999942' }],
-            token: opToken,
+            token: furyToken,
           },
         ],
       }
@@ -371,7 +371,7 @@ describe('parseTx', () => {
             assetId: 'eip155:10/erc20:0x4200000000000000000000000000000000000042',
             totalValue: '19908484999999999942',
             components: [{ value: '19908484999999999942' }],
-            token: opToken,
+            token: furyToken,
           },
           {
             type: TransferType.Receive,
@@ -380,7 +380,7 @@ describe('parseTx', () => {
             assetId: 'eip155:10/erc20:0x4200000000000000000000000000000000000042',
             totalValue: '19908484999999999942',
             components: [{ value: '19908484999999999942' }],
-            token: opToken,
+            token: furyToken,
           },
         ],
       }
@@ -509,7 +509,7 @@ describe('parseTx', () => {
         components: [{ value: '500000000000000000' }],
         from: address,
         to: '0xA3128d9b7Cca7d5Af29780a56abEec12B05a6740',
-        token: opToken,
+        token: furyToken,
         totalValue: '500000000000000000',
         type: TransferType.Send,
       }
@@ -576,7 +576,7 @@ describe('parseTx', () => {
         components: [{ value: '1000111408396873959586' }],
         from: '0xA3128d9b7Cca7d5Af29780a56abEec12B05a6740',
         to: address,
-        token: opToken,
+        token: furyToken,
         totalValue: '1000111408396873959586',
         type: TransferType.Receive,
       }
